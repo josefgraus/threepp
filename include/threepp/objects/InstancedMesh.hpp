@@ -35,9 +35,11 @@ namespace threepp {
                 std::shared_ptr<Material> material,
                 unsigned int count);
 
+        static std::shared_ptr<InstancedMesh> create(std::shared_ptr<Mesh> mesh, unsigned int count);
 
     protected:
         InstancedMesh(std::shared_ptr<BufferGeometry> geometry, std::shared_ptr<Material> material, unsigned int count);
+        InstancedMesh(std::shared_ptr<Mesh> mesh, unsigned int count);
     };
 
 }// namespace threepp
