@@ -16,6 +16,7 @@ namespace threepp {
         [[nodiscard]] std::string type() const override;
 
         BufferGeometry* geometry() override;
+        std::shared_ptr<BufferGeometry> shared_geometry() { return geometry_; };
 
         [[nodiscard]] const BufferGeometry* geometry() const;
 

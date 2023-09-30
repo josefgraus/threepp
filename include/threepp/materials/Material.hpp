@@ -107,10 +107,10 @@ namespace threepp {
 
         ~Material() override;
 
+        void copyInto(Material* m) const;
+
     protected:
         Material();
-
-        void copyInto(Material* m) const;
 
         virtual bool setValue(const std::string& key, const MaterialValue& value);
 
